@@ -53,6 +53,20 @@ const bodyButton = createTag({
   tagText: "Body",
 });
 
+//Headers table Tags
+const requestInfoHeaders = createTag({className: "request-info__headers"});
+const requestInfoItemOne = createTag({className: "request-info__item"});
+const requestInfoKey = createTag({className: ["request-info__item", "request-info__item--th"], tagText: "Key"});
+const requestInfoValue = createTag({className: ["request-info__item", "request-info__item--th"], tagText: "Value"});
+const requestInfoItemTwo = createTag({className: "request-info__item"});
+const requestInfoItemThree = createTag({className: "request-info__item"});
+const requestInfoItemForKeyInput = createTag({className: "request-info__item"});
+const requestInfoInputKey = createTag({tagName: "input", className: "request-info__input", tagAttrs: [ {key: "type", value: "text"}, {key: "placeholder", value: "Key"}]});
+const requestInfoItemForValueInput = createTag({className: "request-info__item"});
+const requestInfoInputValue = createTag({tagName: "input", className: "request-info__input", tagAttrs: [ {key: "type", value: "text"}, {key: "placeholder", value: "Value"}]});
+const requestInfoItemFour = createTag({className: "request-info__item"});
+
+
 //Body container and textarea
 const requestInfoBody = createTag({ className: "request-info__body" });
 const requestInfoBodyForm = createTag({
@@ -90,5 +104,18 @@ CodeMirror.fromTextArea(requestInfoBodyTextBox, {
   mode: 'application/json',
   lint: true,
 });
+
+//Headers container
+requestInfo.appendChild(requestInfoHeaders);
+requestInfoHeaders.appendChild(requestInfoItemOne);
+requestInfoHeaders.appendChild(requestInfoKey);
+requestInfoHeaders.appendChild(requestInfoValue);
+requestInfoHeaders.appendChild(requestInfoItemTwo);
+requestInfoHeaders.appendChild(requestInfoItemThree);
+requestInfoHeaders.appendChild(requestInfoItemForKeyInput);
+requestInfoItemForKeyInput.appendChild(requestInfoInputKey);
+requestInfoHeaders.appendChild(requestInfoItemForValueInput);
+requestInfoItemForValueInput.appendChild(requestInfoInputValue);
+requestInfoHeaders.appendChild(requestInfoItemFour);
 
 document.body.appendChild(requestInfo);
