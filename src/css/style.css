@@ -353,6 +353,7 @@ body {
     "name"
     "request-info"
     "response";
+  margin: 25px;
 }
 
 .header {
@@ -374,12 +375,12 @@ body {
 .header .header__title {
   color: white;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 .header .header__icon {
   font-size: 1.25rem;
   color: #ff6c37;
-  margin: 0 0 0 0.625rem;
+  margin: 0 0 0 0.8rem;
 }
 .header .header__icon--history:hover {
   color: #af5f43;
@@ -388,12 +389,12 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-  margin: 0 2.1875rem 0 0;
+  margin: 0 1.6rem 0 0;
 }
 
 .request-info {
   grid-area: request-info;
-  padding: 0 2.1875rem;
+  padding: 0 2rem;
   position: relative;
   overflow: hidden;
   border: #cdcdcd solid 1px;
@@ -403,12 +404,12 @@ body {
   color: white;
   font-weight: 500;
   font-size: 1.5rem;
-  margin: 0.625rem 0;
+  margin: 0.5rem 0;
 }
 
 .response {
   grid-area: response;
-  padding: 0 2.1875rem;
+  padding: 0 2.2rem;
   position: relative;
   overflow: hidden;
 }
@@ -416,13 +417,13 @@ body {
   color: white;
   font-weight: 500;
   font-size: 1.5rem;
-  margin: 0.9375rem 0;
+  margin: 1rem 0;
 }
 .response .response__secondary-title {
   color: #959595;
   font-weight: 100;
   font-size: 1.125rem;
-  margin: 0.9375rem 0;
+  margin: 1rem 0;
 }
 
 .response {
@@ -493,7 +494,7 @@ body {
 
 .request-info .request-info__body {
   width: 100%;
-  padding: 0 2.1875rem;
+  padding: 0 0rem;
 }
 
 .request-info .request-info__body-opened {
@@ -506,7 +507,7 @@ body {
   width: 100%;
   margin: 0;
   resize: none;
-  padding: 0.625rem;
+  padding: 0rem;
   overflow: hidden;
 }
 
@@ -515,7 +516,7 @@ body {
 }
 
 .CodeMirror-vscrollbar::-webkit-scrollbar {
-  width: 0.9375rem;
+  width: 0.93375rem;
   outline: 1px solid #cdcdcd;
 }
 
@@ -528,8 +529,8 @@ body {
   background: none;
   cursor: pointer;
   color: #959595;
-  padding: 0.625rem 0;
-  margin: 0 25px 25px 0;
+  padding: 0.8rem 0;
+  margin: 0 0.8rem 0.8rem 0;
 }
 
 .request-info .request-info__btn:hover {
@@ -558,8 +559,8 @@ body {
 .response .response__btn {
   border: white solid 1px;
   color: white;
-  font-size: 0.875rem;
-  padding: 0.3125rem 1.5625rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 1.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
   background-color: #212121;
@@ -576,14 +577,14 @@ body {
 }
 
 .response .response__btn:last-of-type {
-  margin: 0 0.9375rem;
+  margin: 0 0.5rem;
 }
 
 .response .response__body {
   width: 100%;
   position: absolute;
   left: 0;
-  padding: 0 2.1875rem;
+  padding: 0 0rem;
 }
 
 .response .response__raw {
