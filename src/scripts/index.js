@@ -4,12 +4,14 @@ import makeRequestAsync from "../scripts/send/sendRequest";
 import promiseResolved from "./send/promiseResolved.js";
 import addHeaders from "./headers/addHeader";
 import CodeMirror from "codemirror";
+
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/yonce.css";
 import "codemirror/mode/javascript/javascript.js";
 import "codemirror/addon/lint/lint.js";
 import "codemirror/addon/lint/lint.css";
 import "codemirror/addon/lint/json-lint.js";
+import openTab from "./utils/openTab.js";
 
 //Header DOM API elements
 const headerSection = createTag({
@@ -213,6 +215,7 @@ row.appendChild(key);
 row.appendChild(value);
 headersMarkup.appendChild(listContainer);
 headersMarkup.appendChild(addRowButton);
+
 requestInfo.appendChild(headersMarkup);
 
 //Response DOM API elements
